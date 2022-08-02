@@ -1,0 +1,39 @@
+@import "../../styles/variables.scss";
+@import "../../styles/mixins.scss";
+
+.nav {
+  display: contents;
+
+  &__item-link {
+    color: #a0a3a7;
+    text-decoration: none;
+    margin-inline: 4px; 
+    @include desktop {
+        margin-inline: 16px;
+    }
+}
+
+&__list {
+    grid-area: list;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+  }
+
+  &__link {
+    grid-area: link;
+  }
+
+  &__button {
+    grid-area: button;
+    border-radius: 999px;
+    border: none;
+    @include desktop {
+      width: 159px;
+      height: 48px;
+      justify-self: right;
+      align-self: center;
+    }
+  }
+}

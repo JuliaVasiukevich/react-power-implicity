@@ -19,43 +19,31 @@
   }
 
   &__button {
-    border: 2px solid;
-    border-image-slice: 1;
-    border-width: 2px;
-    border-image-source: linear-gradient(
-      to left,
-      rgba(252, 64, 96, 1),
-      rgba(128, 97, 253, 1)
-    );
-    padding: 16px 32px;
-    background: linear-gradient(
-      to left,
-      rgba(252, 64, 96, 1),
-      rgba(128, 97, 253, 1)
-    );
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-size: 18px;
-    font-family: "Roboto", sans-serif;
-    @include tablet {
-      padding: 16px 96px;
-    }
+    background: none;
+    background-image: url(../assets/button.svg);
+    border: none;
+    width: 239px;
+    height: 53px;
   }
 }
 
-.swiper {
+.slider {
   color: #f2f4f7;
-  grid-area: slide;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  flex-grow: 1;
 
   &__container {
+    grid-area: slide;
+    max-width: 600px;
   }
 
   &__dots {
+    padding: 0px;
     display: flex;
     justify-content: center;
+    list-style-type: none;
   }
 
   &__dot {

@@ -2,7 +2,18 @@
 @import "../../styles/mixins.scss";
 
 .nav {
-  display: contents;
+  display: grid;
+  grid-template-areas:
+    "link button"
+    "list list";
+  grid-template-columns: 60px 1fr;
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+
+  @include desktop {
+    grid-template-areas:
+      "link list button";
+  }
 
   &__item-link {
     color: #a0a3a7;

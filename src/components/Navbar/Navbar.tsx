@@ -1,4 +1,4 @@
-import { ReactComponent as Logo } from "../assets/logo.svg";
+import { ReactComponent as Logo } from "../../assets/logo.svg";
 import "./index.scss";
 
 export const Navbar = () => {
